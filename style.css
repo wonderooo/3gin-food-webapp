@@ -1,0 +1,14 @@
+::-moz-placeholder{
+    opacity: 1;
+    color: black;
+    font-weight: bold;
+}
+::placeholder{
+    opacity: 1;
+    color: black;
+    font-weight: bold;
+}
+
+.mar-l{
+    margin-left: 10rem;
+}

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,133 +15,150 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <ul class="nav nav-pills nav-fill">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">3 GIN food</a>
+          <p class="nav-link text-warning">3GIN food</p>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Much longer nav link</a>
+          <p class="nav-link text-black" ><strong>Deliver to:</strong> Current Location <strong>Mińsk Mazowiecki, PL</strong></p>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
+        <div class="nav-item row row-cols-3 g-0 align-items-center">
+          <li class="col nav-item">
+            <input type="text" placeholder="Search food" style="width: 125px; border: none;">
+          </li>
+          <li class="col nav-item">
+            <button type="button" class="btn btn-warning">Login</button>
+          </li>
+        </div>
       </ul>
-    <div class="container bg-warning" style="width: 100%; height: 200px;">
-        <h1 class="text-white m-5">Are you starving!</h1>
+
+    <div class="container-fluid bg-warning mt-1 pb-5" style="background-image: url('Image copy.png'); background-repeat: no-repeat; background-position: 75% bottom; background-size: 500px;">
+        <h1 class="text-white mar-l pt-5 fw-bolder">Are you starving!</h1>
+        <p class="text-black mar-l my-3 opacity-50">Within a few clicks, find meals that are accressible near you</p>
         <!-- Content here -->
-        <div class="card p-8 m-5" style="width: 40rem;">
+        <div class="card p-8 mar-l rounded-3" style="width: 40rem;">
             <div class="card-body">
-                <div class="row">
+                <div class="row mx-2">
                     <div class="col">
-                        <p class="card-text">Delivery</p>
+                        <p class="card-text text-warning">Delivery</p>
                     </div>
                     <div class="col">
-                        <p class="card-text">Delivery</p>
+                        <p class="card-text text-warning">Pickup</p>
                     </div>
                 </div>
-                        <form class="d-flex">
+                        <form class="d-flex my-4 mx-2">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <button class="btn btn-warning text-white" type="submit">Search</button>
                         </form>
             </div>
         </div>
     </div>
-    <div class="card-group mt-5">
-        <div class="card mx-4 ">
-          <img src="i1.jpg" class="card-img-top m-auto" alt="..." style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Greys Vege</h5>
-            <button type="button" class="btn btn-warning">6 days remaining</button>
-          </div>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col">
+          <img src="Image.png" class="rounded" style="width: 18rem;">
+          <p class="opacity-75 mb-1 mt-3">Greys Vage</p>
+          <button type="button" class="btn btn-warning opacity-75">6 days remaining</button>
         </div>
-        <div class="card">
-          <img src="i2.jpg" class="card-img-top m-auto" alt="..." style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Greys Vege</h5>
-            <button type="button" class="btn btn-warning">6 days remaining</button>
-          </div>
+        <div class="col">
+          <img src="Image(1).png" class="rounded" style="width: 18rem;">
+          <p class="opacity-75 mb-1 mt-3">Greys Vage</p>
+          <button type="button" class="btn btn-warning opacity-75">6 days remaining</button>
         </div>
-        <div class="card mx-4">
-          <img src="i3.jpg" class="card-img-top m-auto" alt="..." style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Greys Vege</h5>
-            <button type="button" class="btn btn-warning">6 days remaining</button>
-          </div>
+        <div class="col">
+          <img src="Image(2).png" class="rounded" style="width: 18rem;">
+          <p class="opacity-75 mb-1 mt-3">Greys Vage</p>
+          <button type="button" class="btn btn-warning opacity-75">6 days remaining</button>
+        </div>
+        <div class="col">
+          <img src="Image.png" class="rounded" style="width: 18rem;">
+          <p class="opacity-75 mb-1 mt-3">Greys Vage</p>
+          <button type="button" class="btn btn-warning opacity-75">6 days remaining</button>
         </div>
       </div>
-
-      <div class="container bg-light m-5 justify-content-center align-items-center" style="width: 100%;">
-        <h1 class="text-black text-center">How does it work</h1>
-        <div class="row align-items-center mt-5">
-            <div class="col">
-                <img src="i3.jpg" class="card-img-top m-auto" alt="..." style="width: 10rem;">
-                <p class="card-text">Select location</p>
-            </div>
-            <div class="col">
-                <img src="i3.jpg" class="card-img-top m-auto" alt="..." style="width: 10rem;">
-                <p class="card-text">Choose order</p>
-            </div>
-            <div class="col">
-                <img src="i3.jpg" class="card-img-top m-auto" alt="..." style="width: 10rem;">
-                <p class="card-text">Pay advanced</p>
-            </div>
-            <div class="col">
-                <img src="i3.jpg" class="card-img-top" alt="..." style="width: 10rem;">
-                <p class="card-text">Enjoy meals</p>
-            </div>
-        </div>
-        <!-- Content here -->
-        </div>
     </div>
-    
-    <h2 class="mt-5 text-center">Popular items</h2>
-    <div class="card-group mt-5">
-        <div class="card mx-4">
-          <img src="i1.jpg" class="card-img-top m-auto" alt="..." style="width: 8rem;">
-          <div class="card-body">
-            <p style="font-weight: bold;">Burger</p>
-            <p style="color: orange;">Burger</p>
-            <p style="font-weight: bold;">$1</p>
-            <button type="button" class="btn btn-warning">Order now</button>
+
+    <div class="container pt-5" style="text-align: center;">
+      <h2 class="mb-5 text-warning fw-bolder">How does it work</h2>
+      <div class="row justify-content-center">
+        <div class="col">
+          <div style="height: 120px;">
+            <img src="Group.png" class="rounded" style="width: 5rem;">
           </div>
+          <p class="fw-bold mb-1 mt-3">Select location</p>
+          <p class="opacity-50">Choose the location where your food will be delivered.</p>
         </div>
-        <div class="card">
-          <img src="i2.jpg" class="card-img-top m-auto" alt="..." style="width: 8rem;">
-          <div class="card-body">
-            <p style="font-weight: bold;">Burger</p>
-            <p style="color: orange;">Burger</p>
-            <p style="font-weight: bold;">$1</p>
-            <button type="button" class="btn btn-warning">Order now</button>
+        <div class="col">
+          <div style="height: 120px;">
+            <img src="menu 2.png" class="rounded" style="width: 8rem;">
           </div>
+          <p class="fw-bold mb-1 mt-3">Choose order</p>
+          <p class="opacity-50">Check over hundreds of menus to pick your favorite food.</p>
         </div>
-        <div class="card mx-4">
-          <img src="i3.jpg" class="card-img-top m-auto" alt="..." style="width: 8rem;">
-          <div class="card-body">
-            <p style="font-weight: bold;">Burger</p>
-            <p style="color: orange;">Burger</p>
-            <p style="font-weight: bold;">$1</p>
-            <button type="button" class="btn btn-warning">Order now</button>
+        <div class="col">
+          <div style="height: 120px;">
+            <img src="Invoice.png" class="rounded" style="width: 8rem;">
           </div>
+          <p class="fw-bold mb-1 mt-3">Pay advanced</p>
+          <p class="opacity-50">It's quick, safe and simple. Select several methods of payment.</p>
         </div>
-        <div class="card mx-4">
-            <img src="i3.jpg" class="card-img-top m-auto" alt="..." style="width: 8rem;">
-            <div class="card-body">
-                <p style="font-weight: bold;">Burger</p>
-                <p style="color: orange;">Burger</p>
-                <p style="font-weight: bold;">$1</p>
-                <button type="button" class="btn btn-warning">Order now</button>
-            </div>
+        <div class="col">
+          <div style="height: 120px;">
+            <img src="Donut.png" class="rounded" style="width: 8rem;">
           </div>
-          <div class="card mx-4">
-            <img src="i3.jpg" class="card-img-top m-auto" alt="..." style="width: 8rem;">
-            <div class="card-body">
-                <p style="font-weight: bold;">Burger</p>
-                <p style="color: orange;">Burger</p>
-                <p style="font-weight: bold;">$1</p>
-                <button type="button" class="btn btn-warning">Order now</button>
-            </div>
-          </div>
+          <p class="fw-bold mb-1 mt-3">Enjoy meals</p>
+          <p class="opacity-50">Food is made and delivered directly to your home.</p>
+        </div>
       </div>
+    </div>
+
+    <div class="container my-5" style="text-align: center;">
+      <h2>Popular items</h2>
+      <div class="row justify-content-center mt-5">
+        <div class="col">
+          <div style="height: 200px;">
+            <img src="Rectangle 336.png" class="rounded" style="width: 12rem;">
+          </div>
+          <p class="opacity-75 mb-0 mt-3">Cheese Burger</p>
+          <p class="opacity-50 mb-0 mt-0 text-warning">📍 Burger Arena</p>
+          <p class="opacity-100 mb-1 mt-0 fw-bold">$3.88</p>
+          <button type="button" class="btn btn-warning opacity-100 text-white px-5">Order now</button>
+        </div>
+        <div class="col">
+          <div style="height: 200px;">
+            <img src="Rectangle 336(1).png" class="rounded" style="width: 12rem;">
+          </div>
+          <p class="opacity-75 mb-0 mt-3">Thai Soup</p>
+          <p class="opacity-50 mb-0 mt-0 text-warning">📍 Foody man</p>
+          <p class="opacity-100 mb-1 mt-0 fw-bold">$2.79</p>
+          <button type="button" class="btn btn-warning opacity-100 text-white px-5">Order now</button>
+        </div>
+        <div class="col">
+          <div style="height: 200px;">
+            <img src="Rectangle 336(2).png" class="rounded" style="width: 12rem;">
+          </div>
+          <p class="opacity-75 mb-0 mt-3">Toffe's Cake</p>
+          <p class="opacity-50 mb-0 mt-0 text-warning">📍 Top Sticks</p>
+          <p class="opacity-100 mb-1 mt-0 fw-bold">$4.00</p>
+          <button type="button" class="btn btn-warning opacity-100 text-white px-5">Order now</button>
+        </div>
+        <div class="col">
+          <div style="height: 200px">
+            <img src="Rectangle 336 copy.png" class="rounded" style="width: 12rem;">
+          </div>
+          <p class="opacity-75 mb-0 mt-3">Dancake</p>
+          <p class="opacity-50 mb-0 mt-0 text-warning">📍 Cake World</p>
+          <p class="opacity-100 mb-1 mt-0 fw-bold">$1.99</p>
+          <button type="button" class="btn btn-warning opacity-100 text-white px-5">Order now</button>
+        </div>
+        <div class="col">
+          <div style="height: 200px;">
+            <img src="Rectangle 336(4).png" class="rounded" style="width: 12rem;">
+          </div>
+          <p class="opacity-75 mb-0 mt-3">Crispy Sandwitch</p>
+          <p class="opacity-50 mb-0 mt-0 text-warning">📍 Fastfood Dine</p>
+          <p class="opacity-100 mb-1 mt-0 fw-bold">$3.00</p>
+          <button type="button" class="btn btn-warning opacity-100 text-white px-5">Order now</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
